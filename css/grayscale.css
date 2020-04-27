@@ -172,7 +172,7 @@
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 20px 0;;
 }
 
 .projects-section .featured-text {
@@ -294,4 +294,22 @@ a:focus, a:hover {
 
 footer {
   padding: 5rem 0;
+}
+
+.about-pad{
+  padding-top: 35px;
+}
+
+.vid-div{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.smaller-vid{
+  width: 100%;
+  text-align:center;
+}
+
+.text-black{
+  color: black;
 }
