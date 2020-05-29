@@ -315,3 +315,11 @@ footer {
 .text-black{
   color: black;
 }
+
+
+.credits {
+    text-align: center;
+    color: silver;
+    margin-left: 5%;
+    margin-right: 5%;
+}
