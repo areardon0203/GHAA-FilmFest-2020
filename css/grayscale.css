@@ -323,3 +323,12 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
 }
+
+#demo {
+  color:white;
+  font-size: 25px;
+}
+
+.timer {
+  margin-top: -130px;
+}
