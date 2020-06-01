@@ -72,44 +72,6 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center ">
-
-        <div class="timer">
-           <h2 class="text-white ">Time until opening night!</h2>
-                <p id="demo"></p>
-
-                <script>
-                // Set the date we're counting down to
-                var countDownDate = new Date("Jun 3, 2020 17:00:00").getTime();
-
-                // Update the count down every 1 second
-                var x = setInterval(function() {
-
-                  // Get today's date and time
-                  var now = new Date().getTime();
-
-                  // Find the distance between now and the count down date
-                  var distance = countDownDate - now;
-
-                  // Time calculations for days, hours, minutes and seconds
-                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                  // Display the result in the element with id="demo"
-                  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                  + minutes + "m " + seconds + "s ";
-
-                  // If the count down is finished, write some text
-                  if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("demo").innerHTML = "Congratulations on the launch!";
-                  }
-                }, 1000);
-                </script>
-              </div>
-
-              
     <!--    <h1 class="mx-auto my-0 text-uppercase">GHAA FilmFest2020</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Empower the world with your story</h2>
     <!--    <a href="https://forms.gle/qHxy3wsN1bqsRwoX8" class="btn btn-primary js-scroll-trigger">Submit Your Films Here!</a>-->
@@ -119,6 +81,8 @@
   </header>
 
 <!--   Featured Section -->
+
+
   <section id="about" class="about-section text-center">
     <div class="container">
 
@@ -136,6 +100,44 @@
 <br>
 -->
 <div class="row about-pad">
+  <div class="col-lg-8 mx-auto">
+    <div class="timer">
+       <h2 class="text-white col lg 12">Time until opening night!</h2>
+            <p id="demo"></p>
+
+            <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jun 3, 2020 17:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+              // Get today's date and time
+              var now = new Date().getTime();
+
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+              // Display the result in the element with id="demo"
+              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+
+              // If the count down is finished, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "Congratulations on the launch!";
+              }
+            }, 1000);
+            </script>
+          </div>
+
+        </div>
        <div class="col-lg-8 mx-auto">
          <h2 class="text-white mb-4">Today's Featured Films</h2>
     <p class="text-white-50"> Today we have three stories on set from Hannah Kaplan, Desmond Thorne, and Mirirai Sithole.</p>

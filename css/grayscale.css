@@ -327,8 +327,10 @@ footer {
 #demo {
   color:white;
   font-size: 25px;
+  flex-shrink: 5;
 }
 
 .timer {
-  margin-top: -330px;
+  text-align: center;
+  align-items: center;
 }
