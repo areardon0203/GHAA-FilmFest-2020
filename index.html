@@ -39,16 +39,17 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">Today's Featured Film</a>
           </li>
+          <li class="nav-item">
+             <a class="nav-link js-scroll-trigger" href="#june1">Monday June 1st </a>
+           </li>
 
+         <a class="nav-link js-scroll-trigger" href="#may29">Friday May 29th</a>
+         </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#may28">Thursday May 28th</a>
-          </li>
-          <a class="nav-link js-scroll-trigger" href="#may29">Friday May 29th</a>
-          </li>
-        <!--    <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#june1">Monday June 1st </a>
-          </li>
-          <li class="nav-item">
+        </li>
+
+        <!--     <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#june2">Tuesday June 2nd</a>
           </li>
           <li class="nav-item">
@@ -72,6 +73,8 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center ">
+        <!-- Display the countdown timer in an element -->
+
     <!--    <h1 class="mx-auto my-0 text-uppercase">GHAA FilmFest2020</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Empower the world with your story</h2>
     <!--    <a href="https://forms.gle/qHxy3wsN1bqsRwoX8" class="btn btn-primary js-scroll-trigger">Submit Your Films Here!</a>-->
@@ -81,83 +84,70 @@
   </header>
 
 <!--   Featured Section -->
-
-
   <section id="about" class="about-section text-center">
     <div class="container">
+      <h2 class="text-white ">Time until opening night!</h2>
+           <p id="demo"></p>
 
- <!--<div class="row about-pad">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Today's Featured Films</h2>
-     <p class="text-white-50">Today we are featuring Cornelius Uliano, who shares his experience working on the Peanuts movie and updates on his upcoming project.</p>
-        </div>
-      </div>
-      <div class="col-lg-12 vid-div" >
-      <div class="embed-responsive embed-responsive-16by9 smaller-vid" >
-<iframe src="https://drive.google.com/file/d/14lc1wpwb1OBMMtpxbqfkoUkLLn0mb71M/preview" width="640" height="480"></iframe></div>
-</div>
-<br>
-<br>
--->
+           <script>
+           // Set the date we're counting down to
+           var countDownDate = new Date("Jun 3, 2020 17:00:00").getTime();
+
+           // Update the count down every 1 second
+           var x = setInterval(function() {
+
+             // Get today's date and time
+             var now = new Date().getTime();
+
+             // Find the distance between now and the count down date
+             var distance = countDownDate - now;
+
+             // Time calculations for days, hours, minutes and seconds
+             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+             // Display the result in the element with id="demo"
+             document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+             + minutes + "m " + seconds + "s ";
+
+             // If the count down is finished, write some text
+             if (distance < 0) {
+               clearInterval(x);
+               document.getElementById("demo").innerHTML = "Congratulations on the launch!";
+             }
+           }, 1000);
+           </script>
+         </div>
 <div class="row about-pad">
-  <div class="col-lg-8 mx-auto">
-    <div class="timer">
-       <h2 class="text-white col lg 12">Time until opening night!</h2>
-            <p id="demo"></p>
-
-            <script>
-            // Set the date we're counting down to
-            var countDownDate = new Date("Jun 3, 2020 17:00:00").getTime();
-
-            // Update the count down every 1 second
-            var x = setInterval(function() {
-
-              // Get today's date and time
-              var now = new Date().getTime();
-
-              // Find the distance between now and the count down date
-              var distance = countDownDate - now;
-
-              // Time calculations for days, hours, minutes and seconds
-              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-              // Display the result in the element with id="demo"
-              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-              + minutes + "m " + seconds + "s ";
-
-              // If the count down is finished, write some text
-              if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("demo").innerHTML = "Congratulations on the launch!";
-              }
-            }, 1000);
-            </script>
-          </div>
-
-        </div>
        <div class="col-lg-8 mx-auto">
          <h2 class="text-white mb-4">Today's Featured Films</h2>
-    <p class="text-white-50"> Today we have three stories on set from Hannah Kaplan, Desmond Thorne, and Mirirai Sithole.</p>
+    <p class="text-white-50"> Today we have Phillip Smithey, Vanessa R. Butler, and Chris Larken sharing their stories on set.</p>
        </div>
      </div>
-     <div class="col-lg-12 vid-div" >
-     <div class="embed-responsive embed-responsive-16by9 smaller-vid" >
-<iframe src="https://drive.google.com/file/d/1WGURkUyPFl5si0H_INyblRRtBIROKldA/preview" width="640" height="480"></iframe>
+
+
+<div class="col-lg-12 vid-div" >
+<div class="embed-responsive embed-responsive-16by9 smaller-vid" >
+<iframe src="https://drive.google.com/file/d/1KJYzhTgFqymd5Dp5wuY6W8LrR_n0bnNa/preview" width="640" height="480"></iframe>
 </div>
-<h2 class="text-white">Hannah Kaplan</h2>
-<br><br>
-<div class="embed-responsive embed-responsive-16by9 smaller-vid" >
-<iframe src="https://drive.google.com/file/d/1vz2oYabqrslQSSCyLJz0qan5vd4y2lB6/preview" width="640" height="480"></iframe>
-</div><h2 class="text-white">Desmond Thorne</h2>
-<br><br>
+<h2 class="text-white">Phillip Smithey</h2>
+<br>
+<br>
 
 
 <div class="embed-responsive embed-responsive-16by9 smaller-vid" >
-<iframe src="https://drive.google.com/file/d/1UJqble6JAHS8j5UG_ZhiGoap10peRW2L/preview" width="640" height="480"></iframe>
-</div><h2 class="text-white">Mirirai Sithole</h2>
+<iframe src="https://drive.google.com/file/d/1ZpE_jYI4uu4WYRwfmwcrv9HeBN6a7xnv/preview" width="640" height="480"></iframe>
+</div>
+<h2 class="text-white">Vanessa R. Butler</h2>
+<br>
+<br>
+
+
+<div class="embed-responsive embed-responsive-16by9 smaller-vid" >
+<iframe src="https://drive.google.com/file/d/1lH-LiIzjPLt3XYEFnQzvGtp7CBcu89Pt/preview" width="640" height="480"></iframe>
+</div><h2 class="text-white">Chris Larken</h2>
 <br><br>
 </div>
 <br>
@@ -166,6 +156,68 @@
     </div>
 
   </section>
+
+  <!--June 1-->
+    <section id="june1" class="projects-section bg-light">
+      <div class="container">
+        <h2 class="text-black mb-4">June 1st Featured Films</h2>
+
+  <!--  Featured Project Row-->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe src="https://drive.google.com/file/d/1WGURkUyPFl5si0H_INyblRRtBIROKldA/preview" width="640" height="480"></iframe>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Stories on Set</h4>
+              <p class="text-black-50 mb-0">Hannah Kaplan shares her experince on set</p>
+            </div>
+        </div>
+      </div>
+
+  <!--  Featured Project Row-->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe src="https://drive.google.com/file/d/1vz2oYabqrslQSSCyLJz0qan5vd4y2lB6/preview" width="640" height="480"></iframe>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>Stories on Set</h4>
+              <p class="text-black-50 mb-0">Desmond Thorne shares his experince on set</p>
+            </div>
+        </div>
+      </div>
+
+    <!--  Featured Project Row-->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://drive.google.com/file/d/1UJqble6JAHS8j5UG_ZhiGoap10peRW2L/preview" width="640" height="480"></iframe>
+              </div>
+          </div>
+
+          <div class="col-xl-4 col-lg-5">
+              <div class="featured-text text-center text-lg-left">
+                <h4>Stories on Set</h4>
+                <p class="text-black-50 mb-0">Mirirai Sithole shares her experince on set</p>
+              </div>
+          </div>
+        </div>
+
+
+
+
+
+    </div>
+
+  </section>
+
 
   <!--May 29-->
     <section id="may29" class="projects-section bg-light">
@@ -186,7 +238,7 @@
           <div class="col-xl-4 col-lg-5">
             <div class="featured-text text-center text-lg-left">
               <h4>Stories on Set</h4>
-              <p class="text-black-50 mb-0">Michael Barra shares his experience acting in the Spiderman movie and shares a story from set.</p>
+              <p class="text-black-50 mb-0">Michael Berra shares his experience acting in the Spiderman movie and shares a story from set.</p>
             </div>
           </div>
         </div>
